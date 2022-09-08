@@ -6,10 +6,11 @@ const Skill = (props) => {
       return prev.filter((element) => element !== rejectedSkill);
     });
 
-    props.setVisibleArray((current) => {
+    props.setVisibleArray(() => {
       let filteredArray = [...dataArray];
-      console.log(props.skillsArray);
-      props.skillsArray.forEach((skill) => {
+      let skillsArray = [...props.skillsArray];
+      skillsArray.splice(skillsArray.indexOf(rejectedSkill), 1);
+      skillsArray.forEach((skill) => {
         filteredArray = filteredArray.filter((data) => {
           if (
             data.role === skill ||
@@ -21,8 +22,6 @@ const Skill = (props) => {
           }
         });
       });
-      console.log(props.skillsArray);
-
       return filteredArray;
     });
   };

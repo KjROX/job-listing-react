@@ -30,7 +30,7 @@ const Skill = (props) => {
     <div className="element">
       <p>{props.skillName}</p>
       <button onClick={clickHandler}>
-        <img src={require("../assets/images/icon-remove.svg")} alt="" />
+        <img src="./images/icon-remove.svg" alt="" />
       </button>
     </div>
   );

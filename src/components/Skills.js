@@ -1,5 +1,5 @@
 import Skill from "./Skill";
-import dataArray from "../assets/data/data.json";
+import dataArray from "../data/data.json";
 const Skills = (props) => {
   const clickHandler = () => {
     props.skillSettingFunction([]);

@@ -1,4 +1,4 @@
-import dataArray from "../assets/data/data.json";
+import dataArray from "../data/data.json";
 const Skill = (props) => {
   const clickHandler = (e) => {
     const rejectedSkill = e.target.previousElementSibling.textContent;

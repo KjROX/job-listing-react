@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Candidates from "./components/Candidates";
 import Skills from "./components/Skills";
-import dataArray from "./assets/data/data.json";
+import dataArray from "./data/data.json";
 // import backgroundHeaderMobile from "./assets/images/bg-header-mobile.svg";
 
 function App() {
@@ -13,12 +13,12 @@ function App() {
     <div className="app">
       <img
         className="bg-img-mobile"
-        src={require("./assets/images/bg-header-mobile.svg").default}
+        src="./images/bg-header-mobile.svg"
         alt=""
       />
       <img
         className="bg-img-desktop"
-        src={require("./assets/images/bg-header-desktop.svg").default}
+        src="./images/bg-header-desktop.svg"
         alt=""
       />
       <main>
